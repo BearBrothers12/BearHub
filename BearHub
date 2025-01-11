@@ -615,3 +615,17 @@ for _, descendant in pairs(segmentFolder:GetDescendants()) do
 end
    end,
 })
+
+local Button = GamesTab:CreateButton({
+   Name = "🐻Fisch🐻",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/fisch1.5"))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "🐻BeNpcOrDie🐻",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/refs/heads/main/BeNpcOrDie"))()
+   end,
+})
