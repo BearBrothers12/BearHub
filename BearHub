@@ -602,3 +602,16 @@ bb:CaptureController()bb:ClickButton2(Vector2.new())
 ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"end)
    end,
 })
+
+local Button = GamesTab:CreateButton({
+   Name = "🐻ImpossibleSquidGame🐻",
+   Callback = function()
+        local segmentFolder = workspace.segmentSystem.Segments
+
+for _, descendant in pairs(segmentFolder:GetDescendants()) do
+    if descendant:IsA("Part") and descendant:FindFirstChild("breakable") then
+        descendant:Destroy()
+    end
+end
+   end,
+})
