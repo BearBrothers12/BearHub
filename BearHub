@@ -1,10 +1,10 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "🐻BearBrothers🐻",
+   Name = "WickedStars🌠",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Sigma Hub🙉",
-   LoadingSubtitle = "by BearBrothers",
+   LoadingTitle = "Star🌠",
+   LoadingSubtitle = "by WickedHub",
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
@@ -24,21 +24,21 @@ local Window = Rayfield:CreateWindow({
 
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "BearBrothers KeySystem",
+      Title = "WickedStars KeySystem",
       Subtitle = "join server",
-      Note = "https://discord.gg/tG9KBkw6", -- Use this to tell the user how to get a key
-      FileName = "BearBrothers key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      Note = "https://discord.gg/nYwGPuVW", -- Use this to tell the user how to get a key
+      FileName = "WickedStars key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"https://pastebin.com/raw/UnyhTiaK"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 
-local MainTab = Window:CreateTab("🐻Universal🐻", nil) -- Title, Image
+local MainTab = Window:CreateTab("🎋Universal🎋", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 
 local Button = MainTab:CreateButton({
-   Name = "🐻Infinite Jump🐻",
+   Name = "⭐Infinite Jump⭐",
    Callback = function()
 local InfiniteJumpEnabled = true
 game:GetService("UserInputService").JumpRequest:connect(function()
@@ -50,45 +50,45 @@ end)
 })
 
 local Button = MainTab:CreateButton({
-   Name = "🐻Bear Yield🐻",
+   Name = "⭐Bear Yield⭐",
    Callback = function()
        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "🐻Bear HeadHitbox🐻",
+   Name = "⭐Bear HeadHitbox⭐",
    Callback = function()
        _G.HeadSize = 7.8 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.Head.Transparency = 0.6 v.Character.Head.BrickColor = BrickColor.new("Red") v.Character.Head.Material = "Neon" v.Character.Head.CanCollide = false v.Character.Head.Massless = true end) end end end end) 
    end,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "🐻Bear Jerky🔴🐻",
+   Name = "⭐Bear Jerky🔴⭐",
    Callback = function()
          
    end,
 })
 
-local GamesTab = Window:CreateTab("🐻OtherGames🐻", nil) -- Title, Image
+local GamesTab = Window:CreateTab("🎋OtherGames🎋", nil) -- Title, Image
 local Section = GamesTab:CreateSection("BearGames")
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Rivals🐻",
+   Name = "⭐Rivals⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/Rivals%20Latest.lua",true))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Mvsd🐻",
+   Name = "⭐Mvsd⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealAvrwm/Projects/main/Xeno%20MVSD%20script.lua", true))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻SquidGame🐻",
+   Name = "⭐SquidGame⭐",
    Callback = function()
         _G.Theme = "Dark"
 --Themes: Light, Dark, Red, Mocha, Aqua and Jester
@@ -98,35 +98,35 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻MM2🐻",
+   Name = "⭐MM2⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring"))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Bedwars Vape🐻",
+   Name = "⭐Bedwars Vape⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Jailbreak🐻",
+   Name = "⭐Jailbreak⭐",
    Callback = function()
         loadstring(game:HttpGet('http://scripts.projectauto.xyz/AutoRobV5'))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Zombie Attacks🐻",
+   Name = "⭐Zombie Attacks🟡⭐",
    Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/RTrade/Voidz/main/Games.lua'),true))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Bedwars AimAssits🐻",
+   Name = "⭐Bedwars AimAssits⭐",
    Callback = function()
         PLAYER  = game.Players.LocalPlayer
 MOUSE   = PLAYER:GetMouse()
@@ -367,35 +367,35 @@ until ESP_ENABLED == false
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻BeeSwarm🐻",
+   Name = "⭐BeeSwarm⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/VerbalHubz/Verbal-Hub/refs/heads/main/Bee%20Swarm%20Sim.Lua",true))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻PrisonLife🐻",
+   Name = "⭐PrisonLife⭐",
    Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻GunGrounds-FFA🐻",
+   Name = "⭐GunGrounds-FFA⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/agreed69-scripts/open-src-scripts/refs/heads/main/Gun%20Grounds%20FFA.lua", true))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Phantom Forces🐻",
+   Name = "⭐Phantom Forces⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/dementiaenjoyer/homohack/main/loader.lua"))()    
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻TowerOfHell🐻",
+   Name = "⭐TowerOfHell⭐",
    Callback = function()
         getgenv().ignoreGameCheck = false;
 loadstring(game:HttpGet("https://luau.tech/build"))()
@@ -403,35 +403,35 @@ loadstring(game:HttpGet("https://luau.tech/build"))()
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Arsenal🐻",
+   Name = "⭐Arsenal⭐",
    Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/8ysy7ENG",true))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Voidware-Bedwars🐻",
+   Name = "⭐⭐Voidware-Bedwars⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Doors🐻",
+   Name = "⭐Doors⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Aurora-Bedwars🐻",
+   Name = "⭐Aurora-Bedwars⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/cocotv666/Aurora/main/Aurora_Loader"))()
    end,
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Bladeball🐻",
+   Name = "⭐Bladeball⭐",
    Callback = function()
        getgenv().visualizer = true
 
@@ -440,14 +440,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/
 })
 
 local Button = MainTab:CreateButton({
-   Name = "🐻BearNameless Admin🐻",
+   Name = "⭐BearNameless Admin⭐",
    Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
    end,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "🐻Fly🐻",
+   Name = "⭐Fly⭐",
    Callback = function()
         --[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
@@ -457,25 +457,25 @@ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\
 })
 
 local Button = MainTab:CreateButton({
-   Name = "🐻BTools🐻",
+   Name = "⭐BTools⭐",
    Callback = function()
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
    end,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "🐻Invisible🐻",
+   Name = "⭐Invisible⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Luarmor123/community-Y-HUB/refs/heads/main/invisible-button"))()
 
    end,
 })
 
-local MiscTab = Window:CreateTab("🐻Misc🐻", nil) -- Title, Image
+local MiscTab = Window:CreateTab("🎋Misc🎋", nil) -- Title, Image
 local Section = MiscTab:CreateSection("Misc")
 
 local Toggle = MiscTab:CreateToggle({
-   Name = "🐻Noclip🐻",
+   Name = "⭐Noclip⭐",
    CurrentValue = false,
    Flag = "Noclip", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -507,7 +507,7 @@ noclip() -- to toggle noclip() and clip()
 })
 
 local Toggle = MiscTab:CreateToggle({
-   Name = "🐻SpeedChanger🐻",
+   Name = "⭐SpeedChanger⭐",
    CurrentValue = false,
    Flag = "Speed", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -517,7 +517,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MrScripterrFr/Speed-C
 })
 
 local Button = MainTab:CreateButton({
-   Name = "🐻ESP🐻",
+   Name = "⭐ESP⭐",
    Callback = function()
         local FillColor = Color3.fromRGB(175,25,255)
 local DepthMode = "AlwaysOnTop"
@@ -572,14 +572,14 @@ end)
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻BloxFruits🐻",
+   Name = "⭐BloxFruits⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/KOBENFF/sdfd/refs/heads/main/Koatta.txt"))()
    end,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "🐻Anti Afk🐻",
+   Name = "⭐Anti Afk⭐",
    Callback = function()
         wait(0.5)local ba=Instance.new("ScreenGui")
 local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
@@ -604,7 +604,7 @@ ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status 
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻ImpossibleSquidGame🐻",
+   Name = "⭐ImpossibleSquidGame⭐",
    Callback = function()
         local segmentFolder = workspace.segmentSystem.Segments
 
@@ -617,7 +617,7 @@ end
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻Fisch🐻",
+   Name = "⭐Fisch⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
    end,
@@ -631,7 +631,7 @@ local Button = GamesTab:CreateButton({
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "🐻SouthBronx🐻",
+   Name = "⭐SouthBronx⭐",
    Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/DjjzNZ9X'))() 
    end,
