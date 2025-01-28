@@ -50,21 +50,21 @@ end)
 })
 
 local Button = MainTab:CreateButton({
-   Name = "⭐Bear Yield⭐",
+   Name = "⭐Star Yield⭐",
    Callback = function()
        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "⭐Bear HeadHitbox⭐",
+   Name = "⭐Star HeadHitbox⭐",
    Callback = function()
        _G.HeadSize = 7.8 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.Head.Transparency = 0.6 v.Character.Head.BrickColor = BrickColor.new("Red") v.Character.Head.Material = "Neon" v.Character.Head.CanCollide = false v.Character.Head.Massless = true end) end end end end) 
    end,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "⭐Bear Jerky🔴⭐",
+   Name = "⭐Star Jerky🔴⭐",
    Callback = function()
          
    end,
@@ -112,7 +112,7 @@ local Button = GamesTab:CreateButton({
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "⭐Jailbreak⭐",
+   Name = "⭐Jailbreak v5⭐",
    Callback = function()
         loadstring(game:HttpGet('http://scripts.projectauto.xyz/AutoRobV5'))()
    end,
