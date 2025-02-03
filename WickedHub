@@ -433,7 +433,7 @@ local Button = GamesTab:CreateButton({
 local Button = GamesTab:CreateButton({
    Name = "⭐Bladeball⭐",
    Callback = function()
-       getgenv().visualizer = true
+g       etgenv().visualizer = true
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
    end,
@@ -574,7 +574,7 @@ end)
 local Button = GamesTab:CreateButton({
    Name = "⭐BloxFruits⭐",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/KOBENFF/sdfd/refs/heads/main/Koatta.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
    end,
 })
 
