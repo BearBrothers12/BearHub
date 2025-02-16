@@ -405,7 +405,7 @@ loadstring(game:HttpGet("https://luau.tech/build"))()
 local Button = GamesTab:CreateButton({
    Name = "⭐Arsenal⭐",
    Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/8ysy7ENG",true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nickyangtpe/Vapa-v2/refs/heads/main/Vapav2-Arsenal.lua", true))()
    end,
 })
 
@@ -603,7 +603,7 @@ end
 local Button = GamesTab:CreateButton({
    Name = "⭐Fisch⭐",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
    end,
 })
 
@@ -625,13 +625,6 @@ local Button = GamesTab:CreateButton({
    Name = "⭐Bloxfruits⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
-   end,
-})
-
-local Button = GamesTab:CreateButton({
-   Name = "⭐Bladeball⭐",
-   Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/SadlekAski/Scripts/main/Blade%20Ball/Equip%20any%20ability.lua'))()
    end,
 })
 
@@ -671,5 +664,12 @@ local Button = GamesTab:CreateButton({
    Name = "⭐Jailbreak Vape v4⭐",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "⭐Bladeball⭐",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/refs/heads/main/PitbullHubX.lua", true))()
    end,
 })
