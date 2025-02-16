@@ -673,3 +673,11 @@ local Button = GamesTab:CreateButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/refs/heads/main/PitbullHubX.lua", true))()
    end,
 })
+
+local Button = GamesTab:CreateButton({
+   Name = "⭐Ronix Bloxfruits⭐",
+   Callback = function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b5f968ca22436160479678e830766cc4.lua"))() 
+
+   end,
+})
