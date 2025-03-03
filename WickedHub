@@ -405,7 +405,7 @@ loadstring(game:HttpGet("https://luau.tech/build"))()
 local Button = GamesTab:CreateButton({
    Name = "⭐Arsenal⭐",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nickyangtpe/Vapa-v2/refs/heads/main/Vapav2-Arsenal.lua", true))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Nickyangtpe/Vapa-v2/refs/heads/main/Vapav2-Arsenal.lua", true))()
    end,
 })
 
