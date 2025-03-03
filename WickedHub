@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "WickedStars V.1.14",
+   Name = "WickedStars V1.1.5",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Star⭐",
    LoadingSubtitle = "by WickedHub",
@@ -405,7 +405,7 @@ loadstring(game:HttpGet("https://luau.tech/build"))()
 local Button = GamesTab:CreateButton({
    Name = "⭐Arsenal⭐",
    Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Nickyangtpe/Vapa-v2/refs/heads/main/Vapav2-Arsenal.lua", true))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/helldevelopment/RobloxScripts/main/SanityLoader.lua"))()
    end,
 })
 
